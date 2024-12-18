@@ -1,33 +1,25 @@
 
-package logica;
+package videojuego;
 
-public class VideoJuego {
+ 
 
+public class Vjuego {
     String codigo;
     String titulo;
     String consola;
-    int cantjugadores;
+    int cantidadJugadores;
     String categoria;
-
-    public VideoJuego() {
-    }
     
     
-    
-
-    public VideoJuego(String codigo, String titulo, String consola, int cantjugadores, String categoria) {
+    public Vjuego(String codigo, String titulo, String consola, int cantidadJugadores, String categoria) {
         this.codigo = codigo;
         this.titulo = titulo;
         this.consola = consola;
-        this.cantjugadores = cantjugadores;
+        this.cantidadJugadores = cantidadJugadores;
         this.categoria = categoria;
     }
-    
-    
-    
-    
-    
 
+    // Getters y setters
     public String getCodigo() {
         return codigo;
     }
@@ -52,12 +44,12 @@ public class VideoJuego {
         this.consola = consola;
     }
 
-    public int getCantjugadores() {
-        return cantjugadores;
+    public int getCantidadJugadores() {
+        return cantidadJugadores;
     }
 
-    public void setCantjugadores(int cantjugadores) {
-        this.cantjugadores = cantjugadores;
+    public void setCantidadJugadores(int cantidadJugadores) {
+        this.cantidadJugadores = cantidadJugadores;
     }
 
     public String getCategoria() {
@@ -68,9 +60,10 @@ public class VideoJuego {
         this.categoria = categoria;
     }
 
-    
-    
-    
+    // Método para mostrar los detalles del videojuego
+    public void mostrarInfo() {
+        System.out.println("Título: " + titulo + ", Consola: " + consola + ", Jugadores: " + cantidadJugadores);
+    }
     
     
 }
